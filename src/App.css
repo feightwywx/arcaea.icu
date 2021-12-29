@@ -1,3 +1,12 @@
-.App {
-  background-image: "https://statics.arcaea.icu/4_b.jpg";
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+  background-color: #0A2232;
+  background-image: url('https://statics.arcaea.icu/4_b.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

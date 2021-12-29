@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -14,7 +13,6 @@ import Stack from '@mui/material/Stack';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import { Link } from '@mui/material';
 
 const styles = {
   whiteText: {
@@ -38,14 +36,7 @@ function App() {
   const upMiddle = useMediaQuery(theme.breakpoints.up('md'))
 
   return (
-    <div className="App" style={{
-      backgroundImage: `url('https://statics.arcaea.icu/4_b.jpg')`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      width: '100vw',
-      height: upMiddle ? '100vh' : undefined
-    }}>
+    <div className="App">
       <ThemeProvider theme={theme}>
         <header className="App-header">
           <ButtonAppBar />
@@ -63,7 +54,7 @@ function App() {
           justifyContent={{ xs: 'center', md: 'flex-start' }}
           alignItems={{ xs: 'strench', md: 'flex-start' }}
           spacing={2}
-          sx={{ mx: upMiddle ? 8 : 8, mt: 8, pb: 8}}
+          sx={{ mx: upMiddle ? 8 : 8, mt: 8, pb: 8 }}
         >
           <ProjectCard
             title='arcfutil'
