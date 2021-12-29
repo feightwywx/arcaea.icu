@@ -32,7 +32,8 @@ function App() {
       }),
     [prefersDarkMode],
   );
-
+  
+  const upSmall = useMediaQuery(theme.breakpoints.up('sm'))
   const upMiddle = useMediaQuery(theme.breakpoints.up('md'))
 
   return (
@@ -42,7 +43,7 @@ function App() {
           <ButtonAppBar />
         </header>
         <Box sx={{ mx: upMiddle ? 8 : 0, pt: upMiddle ? '200px' : '100px' }}>
-          <Typography align={upMiddle ? 'left' : 'center'} variant='h1' style={styles.whiteText}>
+          <Typography align={upMiddle ? 'left' : 'center'} variant={upSmall ? 'h1' : 'h2'} style={styles.whiteText}>
             arcaea.icu
           </Typography>
           <Typography align={upMiddle ? 'left' : 'center'} variant='h6' style={styles.whiteText}>
@@ -54,7 +55,7 @@ function App() {
           justifyContent={{ xs: 'center', md: 'flex-start' }}
           alignItems={{ xs: 'strench', md: 'flex-start' }}
           spacing={2}
-          sx={{ mx: upMiddle ? 8 : 8, mt: 8, pb: 8 }}
+          sx={{ mx: upSmall ? 8 : 4, mt: 8, pb: 8 }}
         >
           <ProjectCard
             title='arcfutil'
