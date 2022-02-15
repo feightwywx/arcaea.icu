@@ -73,10 +73,10 @@ function App() {
           />
           <ProjectCard
             title='谱面盒子'
-            content='.direwolf的已公开Arcaea自制谱预览和下载页...是这样吗？'
-            buttonText='敬请期待'
+            content='.direwolf的已公开Arcaea自制谱预览和下载页...还没做完！'
+            buttonText='谱面下载'
             upMiddle={upMiddle}
-            buttonDisabled={true}
+            buttonLink='https://chart.arcaea.icu/'
           />
         </Stack>
         <Box sx={{ mx: upMiddle ? 8 : 0, pt: upMiddle ? 8 : 2, pb: 8 }}>
