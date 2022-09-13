@@ -1,18 +1,21 @@
-import React from 'react';
 import './App.css';
+
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { blueGrey } from '@mui/material/colors';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import LaunchIcon from '@mui/icons-material/Launch';
-import Stack from '@mui/material/Stack';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+import LaunchIcon from '@mui/icons-material/Launch';
+import { Link } from '@mui/material';
+import React from 'react';
+import Stack from '@mui/material/Stack';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import { blueGrey } from '@mui/material/colors';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 const styles = {
   whiteText: {
@@ -81,7 +84,7 @@ function App() {
         </Stack>
         <Box sx={{ mx: upMiddle ? 8 : 0, pt: upMiddle ? 8 : 2, pb: 8 }}>
           <Typography align={upMiddle ? 'left' : 'center'} variant='subtitle2' style={styles.whiteText}>
-            Copyright © .direwolf 2022. 皖ICP备20002195号-2
+            Copyright © .direwolf 2022. <Link href='http://beian.miit.gov.cn/' sx={{color: 'white'}}>皖ICP备20002195号-2</Link>
           </Typography>
         </Box>
       </ThemeProvider>
