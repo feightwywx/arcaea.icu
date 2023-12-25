@@ -52,6 +52,9 @@ function App() {
           <Typography align={upMiddle ? 'left' : 'center'} variant='h6' style={styles.whiteText}>
             .direwolf 的 Arcaea 相关堆放站
           </Typography>
+          <Typography align={upMiddle ? 'left' : 'center'} variant='h6' style={styles.whiteText}>
+            交流群：477499123
+          </Typography>
         </Box>
         <Stack
           direction={{ xs: 'column', md: 'row' }}
@@ -75,16 +78,19 @@ function App() {
             upMiddle={upMiddle}
           />
           <ProjectCard
-            title='谱面盒子'
-            content='.direwolf的已公开Arcaea自制谱预览和下载页...还没做完！'
-            buttonText='谱面下载'
+            title='封面生成工具'
+            content='用于生成Arcaea自制视频封面的一个小工具。'
+            buttonText='现在使用'
             upMiddle={upMiddle}
-            buttonLink='https://chart.arcaea.icu/'
+            buttonLink='https://cover.arcaea.icu/'
           />
         </Stack>
         <Box sx={{ mx: upMiddle ? 8 : 0, pt: upMiddle ? 8 : 2, pb: 8 }}>
           <Typography align={upMiddle ? 'left' : 'center'} variant='subtitle2' style={styles.whiteText}>
-            Copyright © .direwolf 2022. <Link href='http://beian.miit.gov.cn/' sx={{color: 'white'}}>皖ICP备20002195号-2</Link>
+            Copyright © .direwolf 2024.
+          </Typography>
+          <Typography align={upMiddle ? 'left' : 'center'} variant='subtitle2' style={styles.whiteText}>
+            Background image is stolen from lowiro.
           </Typography>
         </Box>
       </ThemeProvider>
@@ -120,9 +126,9 @@ function ButtonAppBar() {
         <Button
           variant="text"
           color="inherit"
-          href="https://direcore.xyz"
+          href="https://drwf.ink"
           startIcon={<LaunchIcon />}
-          style={styles.whiteText}>direcore.xyz</Button>
+          style={styles.whiteText}>drwf.ink</Button>
       </Toolbar>
     </AppBar>
   );
